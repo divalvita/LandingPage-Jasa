@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HomeCare Pro — Layanan Rumah Premium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-content">
+    <div class="loader-logo">Home<span>Care</span> Pro</div>
+    <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+  </div>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#" class="logo">Home<span>Care</span> Pro</a>
+  <ul class="nav-links">
+    <li><a href="#services">Layanan</a></li>
+    <li><a href="#how">Cara Kerja</a></li>
+    <li><a href="#testimonials">Testimoni</a></li>
+    <li><a href="#booking" class="nav-cta">Pesan Sekarang →</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-orb o1"></div>
+  <div class="hero-bg-orb o2"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Tersedia 24/7 — Seluruh Indonesia
+    </div>
+    <h1>Rumah Bersih,<br>Hidup <em>Nyaman</em><br>Setiap Hari</h1>
+    <p class="hero-desc">Percayakan perawatan rumah Anda kepada profesional berpengalaman. Layanan cepat, terpercaya, dan hasil yang memuaskan — hanya dengan satu klik.</p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn-primary">Pesan Layanan ↗</a>
+      <a href="#services" class="btn-outline">Lihat Semua Layanan</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num"><span class="counter" data-target="12">0</span><sup>K+</sup></div>
+        <div class="stat-label">Pelanggan Puas</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span class="counter" data-target="98">0</span><sup>%</sup></div>
+        <div class="stat-label">Kepuasan Layanan</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span class="counter" data-target="250">0</span><sup>+</sup></div>
+        <div class="stat-label">Mitra Profesional</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-card-main">
+      <div class="hero-card-img">
+        <span class="home-icon">🏡</span>
+      </div>
+
+      <!-- Floating cards -->
+      <div class="floating-card fc-top">
+        <div class="fc-icon green">✓</div>
+        <div>
+          <div class="fc-title">Tugas Selesai</div>
+          <div class="fc-sub">Pembersihan Rumah · Hari ini</div>
+          <div class="fc-rating">★★★★★ <span class="fc-count">5.0</span></div>
+        </div>
+      </div>
+
+      <div class="floating-card fc-bot">
+        <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.6rem;">
+          <div class="fc-icon amber" style="flex-shrink:0">📊</div>
+          <div>
+            <div class="fc-title">Progress Bulan Ini</div>
+            <div class="fc-sub">48 dari 62 layanan</div>
+          </div>
+        </div>
+        <div class="fc-progress">
+          <div style="display:flex; justify-content:space-between; font-size:0.72rem; margin-bottom:4px; color:var(--charcoal-60)">
+            <span>Selesai</span><span>78%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">🧹 Pembersihan Rumah <span class="sep">·</span></span>
+    <span class="marquee-item">🔧 Perbaikan &amp; Renovasi <span class="sep">·</span></span>
+    <span class="marquee-item">🌿 Taman &amp; Landscaping <span class="sep">·</span></span>
+    <span class="marquee-item">❄️ AC &amp; Elektronik <span class="sep">·</span></span>
+    <span class="marquee-item">🔒 Keamanan Rumah <span class="sep">·</span></span>
+    <span class="marquee-item">🛁 Renovasi Kamar Mandi <span class="sep">·</span></span>
+    <span class="marquee-item">🍳 Dapur &amp; Peralatan <span class="sep">·</span></span>
+    <span class="marquee-item">🧹 Pembersihan Rumah <span class="sep">·</span></span>
+    <span class="marquee-item">🔧 Perbaikan &amp; Renovasi <span class="sep">·</span></span>
+    <span class="marquee-item">🌿 Taman &amp; Landscaping <span class="sep">·</span></span>
+    <span class="marquee-item">❄️ AC &amp; Elektronik <span class="sep">·</span></span>
+    <span class="marquee-item">🔒 Keamanan Rumah <span class="sep">·</span></span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-tag reveal">Layanan Kami</div>
+  <h2 class="reveal reveal-delay-1">Semua yang Rumah<br>Anda <em>Butuhkan</em></h2>
+  <p class="section-desc reveal reveal-delay-2">Dari pembersihan rutin hingga perbaikan darurat, tim profesional kami siap membantu kapan pun Anda membutuhkan.</p>
+
+  <div class="services-grid">
+    <div class="service-card green reveal reveal-delay-1">
+      <div class="svc-icon green">🧹</div>
+      <div class="svc-title">Kebersihan Rumah</div>
+      <div class="svc-desc">Pembersihan menyeluruh oleh tenaga ahli berpengalaman dengan peralatan dan produk eco-friendly terbaik.</div>
+      <div class="svc-price">Mulai Rp 150.000 / sesi</div>
+      <div class="svc-arrow">→</div>
+    </div>
+    <div class="service-card amber reveal reveal-delay-2">
+      <div class="svc-icon amber">🔧</div>
+      <div class="svc-title">Perbaikan &amp; Renovasi</div>
+      <div class="svc-desc">Teknisi handal untuk memperbaiki kerusakan rumah dari yang kecil hingga renovasi besar.</div>
+      <div class="svc-price">Mulai Rp 200.000 / kunjungan</div>
+      <div class="svc-arrow">→</div>
+    </div>
+    <div class="service-card terra reveal reveal-delay-3">
+      <div class="svc-icon terra">❄️</div>
+      <div class="svc-title">Servis AC &amp; Elektronik</div>
+      <div class="svc-desc">Perawatan dan perbaikan AC, kulkas, mesin cuci, dan peralatan elektronik rumah tangga.</div>
+      <div class="svc-price">Mulai Rp 120.000 / unit</div>
+      <div class="svc-arrow">→</div>
+    </div>
+    <div class="service-card terra reveal reveal-delay-1">
+      <div class="svc-icon terra">🌿</div>
+      <div class="svc-title">Taman &amp; Landscaping</div>
+      <div class="svc-desc">Desain dan perawatan taman yang membuat eksterior rumah Anda selalu indah dan asri sepanjang tahun.</div>
+      <div class="svc-price">Mulai Rp 250.000 / kunjungan</div>
+      <div class="svc-arrow">→</div>
+    </div>
+    <div class="service-card green reveal reveal-delay-2">
+      <div class="svc-icon green">🔒</div>
+      <div class="svc-title">Keamanan Rumah</div>
+      <div class="svc-desc">Pemasangan CCTV, alarm, dan sistem keamanan smart home untuk ketenangan pikiran Anda.</div>
+      <div class="svc-price">Mulai Rp 500.000 / paket</div>
+      <div class="svc-arrow">→</div>
+    </div>
+    <div class="service-card amber reveal reveal-delay-3">
+      <div class="svc-icon amber">🛁</div>
+      <div class="svc-title">Renovasi Kamar Mandi</div>
+      <div class="svc-desc">Transformasi kamar mandi Anda dengan desain modern dan material premium berkualitas tinggi.</div>
+      <div class="svc-price">Mulai Rp 3.500.000 / proyek</div>
+      <div class="svc-arrow">→</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="section-tag reveal">Cara Kerja</div>
+  <h2 class="reveal reveal-delay-1">Mudah dalam <em>4 Langkah</em></h2>
+  <p class="section-desc reveal reveal-delay-2">Proses pemesanan yang sederhana dan transparan. Kami memastikan pengalaman terbaik untuk Anda.</p>
+
+  <div class="steps-wrap">
+    <div class="step-item reveal reveal-delay-1">
+      <div class="step-num">01</div>
+      <div class="step-title">Pilih Layanan</div>
+      <div class="step-desc">Temukan layanan yang Anda butuhkan dari katalog lengkap kami yang terus diperbarui.</div>
+    </div>
+    <div class="step-item reveal reveal-delay-2">
+      <div class="step-num">02</div>
+      <div class="step-title">Jadwalkan Waktu</div>
+      <div class="step-desc">Pilih tanggal dan waktu yang paling nyaman sesuai dengan kesibukan Anda.</div>
+    </div>
+    <div class="step-item reveal reveal-delay-3">
+      <div class="step-num">03</div>
+      <div class="step-title">Konfirmasi Pesanan</div>
+      <div class="step-desc">Terima konfirmasi instan dan profil lengkap teknisi yang akan datang ke rumah Anda.</div>
+    </div>
+    <div class="step-item reveal reveal-delay-4">
+      <div class="step-num">04</div>
+      <div class="step-title">Nikmati Hasilnya</div>
+      <div class="step-desc">Teknisi kami bekerja profesional dan Anda dapat memantau progres secara real-time.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-tag reveal">Testimoni</div>
+  <h2 class="reveal reveal-delay-1">Kata Mereka yang<br><em>Sudah Merasakan</em></h2>
+  <p class="section-desc reveal reveal-delay-2">Kepercayaan pelanggan adalah prioritas utama kami. Berikut pengalaman nyata dari mereka.</p>
+
+  <div class="testi-slider reveal">
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Luar biasa! Tim yang datang sangat profesional dan rumah saya jadi bersih banget. Senang sekali dengan hasilnya. Pasti akan pakai layanan ini lagi!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: var(--forest)">AS</div>
+          <div>
+            <div class="testi-name">Anisa Sari</div>
+            <div class="testi-role">Ibu Rumah Tangga · Jakarta Selatan</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"AC di kantor saya sudah lama bermasalah. Setelah menghubungi HomeCare Pro, teknisi datang tepat waktu dan masalah langsung teratasi. Sangat recommended!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: var(--amber)">BP</div>
+          <div>
+            <div class="testi-name">Budi Prasetyo</div>
+            <div class="testi-role">Pengusaha · Bandung</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Taman rumah saya sekarang jadi idola tetangga. Tim landscaping HomeCare Pro benar-benar paham estetika dan perawatan tanaman. Terima kasih!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: var(--terracotta)">DW</div>
+          <div>
+            <div class="testi-name">Dewi Wulandari</div>
+            <div class="testi-role">Arsitek · Surabaya</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Renovasi kamar mandi selesai tepat waktu dan hasilnya melebihi ekspektasi. Harga transparan, tidak ada biaya tersembunyi. Benar-benar layanan premium!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: #6B4ECC">RH</div>
+          <div>
+            <div class="testi-name">Rizky Hidayat</div>
+            <div class="testi-role">Dokter · Yogyakarta</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Sistem keamanan rumah yang dipasang HomeCare Pro sangat canggih dan mudah digunakan. Kini saya bisa memantau rumah dari mana saja lewat smartphone."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: #2D7A8A">LN</div>
+          <div>
+            <div class="testi-name">Linda Nurhayati</div>
+            <div class="testi-role">Manager HRD · Bekasi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="slider-btn" id="prevBtn" onclick="slideTestimonials(-1)">←</button>
+      <button class="slider-btn" id="nextBtn" onclick="slideTestimonials(1)">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING CTA -->
+<div id="booking">
+  <div class="booking-content">
+    <div class="booking-tag">Pesan Sekarang</div>
+    <h2>Jadwalkan Layanan<br><em>Hari Ini Juga</em></h2>
+    <p>Teknisi profesional siap hadir di rumah Anda. Proses cepat, mudah, dan transparan — hasil terjamin.</p>
+    <div class="booking-perks">
+      <div class="perk-item"><span>✓</span> Tanpa biaya tersembunyi</div>
+      <div class="perk-item"><span>✓</span> Garansi kepuasan</div>
+    </div>
+  </div>
+
+  <div class="booking-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label>Nama Lengkap</label>
+        <input type="text" placeholder="John Doe">
+      </div>
+      <div class="form-group">
+        <label>Nomor HP</label>
+        <input type="tel" placeholder="08xx xxxx xxxx">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Pilih Layanan</label>
+      <select>
+        <option>— Pilih Layanan —</option>
+        <option>🧹 Kebersihan Rumah</option>
+        <option>🔧 Perbaikan &amp; Renovasi</option>
+        <option>❄️ Servis AC &amp; Elektronik</option>
+        <option>🌿 Taman &amp; Landscaping</option>
+        <option>🔒 Keamanan Rumah</option>
+        <option>🛁 Renovasi Kamar Mandi</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Tanggal</label>
+        <input type="date">
+      </div>
+      <div class="form-group">
+        <label>Waktu</label>
+        <select>
+          <option>08:00 – 10:00</option>
+          <option>10:00 – 12:00</option>
+          <option>13:00 – 15:00</option>
+          <option>15:00 – 17:00</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn-submit" onclick="handleBooking()">Pesan Sekarang — Gratis Konsultasi 🎉</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Home<span>Care</span> Pro</div>
+      <p class="footer-about">Platform home services terpercaya yang menghubungkan Anda dengan profesional terbaik di seluruh Indonesia.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Layanan</h4>
+      <ul>
+        <li><a href="#">Kebersihan</a></li>
+        <li><a href="#">Perbaikan</a></li>
+        <li><a href="#">AC &amp; Elektronik</a></li>
+        <li><a href="#">Taman</a></li>
+        <li><a href="#">Keamanan</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Perusahaan</h4>
+      <ul>
+        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#">Karir</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Dukungan</h4>
+      <ul>
+        <li><a href="#">Pusat Bantuan</a></li>
+        <li><a href="#">Hubungi Kami</a></li>
+        <li><a href="#">Privasi</a></li>
+        <li><a href="#">Syarat &amp; Ketentuan</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 HomeCare Pro. Hak Cipta Dilindungi.</span>
+    <span>Made with ♥ in Indonesia</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
